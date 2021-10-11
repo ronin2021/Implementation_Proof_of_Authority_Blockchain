@@ -13,7 +13,7 @@ b. Download the zip folder for **Go Ethereum tools** [https://geth.ethereum.org/
 
 c. Within the Git cloned "Implementation_Proof_of_Authority_Blockchain" folder (or any named folder of your choosing for this implementation) create a "Blockchain-Tools" folder and copy the 9 files from the above "Geth & Tools 1.9.7" zip folder.
 
-![9-files](Screenshots\9-files.jpg)
+![9-files](Screenshots/9-files.jpg)
 
 d. Open a GitBash/teminal window and navigate to "Blockchain-Tools" folder within the "Implementation_Proof_of_Authority_Blockchain".
 
@@ -23,9 +23,9 @@ e. Type and enter the following commans
 
 ./geth --datadir node2 account new
 
-![Node1_creation](Screenshots\Node1_creation.jpg)
+![Node1_creation](Screenshots/Node1_creation.jpg)
 
-![Node2_creation](Screenshots\Node2_creation.jpg)
+![Node2_creation](Screenshots/Node2_creation.jpg)
 
 Run puppeth, *"waternet"* (or name your own network), and select the option to configure a new genesis block.
 
@@ -43,9 +43,9 @@ Complete the rest of the prompts, and when you are back at the main menu, choose
 
 Export genesis configurations. This will fail to create two of the files, but you only need *waternet.json* (or your network name.json).
 
-![Genesis_block_creation_1](Screenshots\Genesis_block_creation_1.jpg)
+![Genesis_block_creation_1](Screenshots/Genesis_block_creation_1.jpg)
 
-![Genesis_block_creation_2](Screenshots\Genesis_block_creation_2.jpg)
+![Genesis_block_creation_2](Screenshots/Genesis_block_creation_2.jpg)
 
 Once the genesis block creation completed, it is possible to initialize the nodes with the genesis *waternet.json* file.
 
@@ -55,15 +55,15 @@ Using geth, initialize each node with the new networkname.json.
 
 ./geth --datadir node2 init waternet/waternet.json
 
-![Node1_initiation](Screenshots\Node1_initiation.jpg)
+![Node1_initiation](Screenshots/Node1_initiation.jpg)
 
-![Node2_initiation](Screenshots\Node2_initiation.jpg)
+![Node2_initiation](Screenshots/Node2_initiation.jpg)
 
 Node1 & Node2 folder settings once completed:
 
-![After_init_folders_with_in_node1](Screenshots\After_init_folders_with_in_node1.jpg)
+![After_init_folders_with_in_node1](Screenshots/After_init_folders_with_in_node1.jpg)
 
-![After_init_folders_with_in_node2](Screenshots\After_init_folders_with_in_node2.jpg)
+![After_init_folders_with_in_node2](Screenshots/After_init_folders_with_in_node2.jpg)
 
 ## Part 2 - Setting up mining and begin the node1 and node2
 
@@ -79,15 +79,15 @@ Copy the *"enode://"* address from the node1 mining output and use it below to s
 
 **NOTE:** Type your password and hit enter - even if you can't see it visually!
 
-![Node1_mining_beginning](Screenshots\Node1_mining_beginning.jpg)
+![Node1_mining_beginning](Screenshots/Node1_mining_beginning.jpg)
 
-![Node2_mining_beginning](Screenshots\Node2_mining_beginning.jpg)
+![Node2_mining_beginning](Screenshots/Node2_mining_beginning.jpg)
 
 When needs to terminate the mining use *Ctrl/Command + C* at each of node1 and node2 mining *GitBash/Terminal*.
 
-![Node1_mining_end](Screenshots\Node1_mining_end.jpg)
+![Node1_mining_end](Screenshots/Node1_mining_end.jpg)
 
-![Node2_mining_end](Screenshots\Node2_mining_end.jpg)
+![Node2_mining_end](Screenshots/Node2_mining_end.jpg)
 
 Open up MyCrypto, unlock the wallet using your keystore file from node1.  
 
@@ -104,11 +104,11 @@ Then select the keystore file from *"keystore"* folder within the *"node1"* fold
 
 Give the password if the node1 is password protected if you set as such in creating the node1.
 
-![Unlock_key_store_file](Screenshots\Unlock_key_store_file.jpg)
+![Unlock_key_store_file](Screenshots/Unlock_key_store_file.jpg)
 
 Once the wallet is setup it is possible to observe the vallet, the address, and the mined test ETH.
 
-![Wallet_with_mined_ETH_in_node1](Screenshots\Wallet_with_mined_ETH_in_node1.jpg)
+![Wallet_with_mined_ETH_in_node1](Screenshots/Wallet_with_mined_ETH_in_node1.jpg)
 
 
 Send a transaction from Node 1 to Node 2 to test out the connection
@@ -119,11 +119,11 @@ Confirm the transaction by clicking "Send Transaction", and the "Send" button in
 
 Follwing shows the outputs on MyCrypto:
 
-![Begin_transaction_1](Screenshots\Begin_transaction_1.jpg)
+![Begin_transaction_1](Screenshots/Begin_transaction_1.jpg)
 
-![Begin_transaction_2](Screenshots\Begin_transaction_2.jpg)
+![Begin_transaction_2](Screenshots/Begin_transaction_2.jpg)
 
-![Begin_transaction_3](Screenshots\Begin_transaction_3.jpg)
+![Begin_transaction_3](Screenshots/Begin_transaction_3.jpg)
 
 We have performed 3 transactions from Node1 to Node 2:
 
@@ -131,10 +131,10 @@ We have performed 3 transactions from Node1 to Node 2:
     Transaction 2. value = 50000 test ETH
     Transaction 3. value = 500000 test ETH
 
-![Begin_transaction_4](Screenshots\Begin_transaction_4.jpg)
+![Begin_transaction_4](Screenshots/Begin_transaction_4.jpg)
 
 Verification once signed (using keystore file of Node 2) on to Node 2 in Mycrypto is as follows:
 
-![Begin_transaction_5](Screenshots\Begin_transaction_5.jpg)
+![Begin_transaction_5](Screenshots/Begin_transaction_5.jpg)
 
 This concludes the test implementation.
